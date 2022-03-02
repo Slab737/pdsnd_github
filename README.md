@@ -23,8 +23,14 @@ press **Enter** to move from each section.
 After the statistics have run, raw data can be displayed for 5 bike share users at a time if the user chooses,
 if not they can either reset or terminate the program.
 
-### Files used
-Include the files used
+### Project Files
+Syntax file:
+- bikeshare.py
+
+Data files:
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
