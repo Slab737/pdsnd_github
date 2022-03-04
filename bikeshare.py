@@ -276,9 +276,9 @@ def raw_info(df):
     df=df.fillna('Not Recorded')
 
     i = 0
-    length_of_dataframe = len(df)
+    #length_of_dataframe = len(df)
 
-    while i <= (length_of_dataframe - 5):
+    while i <= (len(df) - 5):
         raw_data=df[i:i+5]
         for j in raw_data.index:
             print('User Number: ',raw_data['Unnamed: 0'][j])
