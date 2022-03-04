@@ -185,7 +185,7 @@ def station_stats(df):
     print("\nThis was the most common start and end station combination.")
     print("Start station: ", comm_start_station)
     print("End station: ", comm_end_station)
-    print("Trips between the two stations: {} times.".format(df['Combination Station'].value_counts()[comb_station]))    
+    print("Trips between the two stations: {} times.".format(df['Combination Station'].value_counts()[comb_station]))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -199,16 +199,16 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_travel_time = np.sum(df['Trip Duration'])
-    print("\nTotal Travel time in seconds:",total_travel_time)
-    print("\nTotal Travel time in minutes:",total_travel_time / 60)
-    print("\nTotal Travel time in hours",total_travel_time / 60 / 60)
+    #total_travel_time = np.sum(df['Trip Duration'])
+    print("\nTotal Travel time in seconds: {}".format(np.sum(df['Trip Duration'])))
+    print("\nTotal Travel time in minutes: {}".format(np.sum(df['Trip Duration'])/60))
+    print("\nTotal Travel time in hours: {}".format(np.sum(df['Trip Duration'])/60/60))
 
 
     # TO DO: display mean travel time
-    mean_travel_time = np.mean(df['Trip Duration'])
-    print("\n\nMean Travel time in seconds:",mean_travel_time)
-    print("\nMean Travel time in minutes:",mean_travel_time / 60)
+    #mean_travel_time = np.mean(df['Trip Duration'])
+    print("\n\nMean Travel time in seconds: {}".format(np.mean(df['Trip Duration'])))
+    print("\nMean Travel time in minutes: {}".format(np.mean(df['Trip Duration'])/60))
 
     print("\n\nWith",df['Trip Duration'].count(), 'total trips taken.')
 
